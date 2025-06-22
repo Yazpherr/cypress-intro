@@ -82,7 +82,11 @@ export function CharacterDetail() {
           }}
         />
         <Card.Body>
-          <Card.Title style={{ textAlign: 'center', fontWeight: 700 }}>
+          <Card.Title
+            as="h1"
+            data-cy="detail-name"
+            style={{ textAlign: 'center', fontWeight: 700 }}
+          >
             {name}
           </Card.Title>
           <ul style={{ listStyle: 'none', padding: 0, margin: '1rem 0' }}>

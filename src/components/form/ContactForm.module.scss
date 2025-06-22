@@ -3,6 +3,12 @@ $border-color: #ccc;
 $primary-color: #007bff;
 $success-color: #28a745;
 
+.card {
+  background: #fff;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 1rem;
+}
+
 .form {
   max-width: 400px;
   margin: 2rem auto;

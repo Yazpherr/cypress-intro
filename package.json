@@ -12,6 +12,7 @@
     "cy:run": "cypress run"
   },
   "dependencies": {
+    "@hugeicons/react": "^1.0.5",
     "axios": "^1.10.0",
     "bootstrap": "^5.3.7",
     "react": "^19.1.0",

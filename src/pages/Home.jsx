@@ -25,17 +25,31 @@ export function Home() {
         width: '100%',
       }}
     >
-      <h1
+      <div
         style={{
-          textAlign: 'center',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: 16,
           marginBottom: 32,
           paddingTop: 32,
-          color: '#fff',
-          textShadow: '0 2px 8px #000',
         }}
       >
-        Personajes de Rick & Morty
-      </h1>
+        <h1
+          style={{
+            color: '#fff',
+            textShadow: '0 2px 8px #000',
+            margin: 0,
+            fontSize: 36,
+            fontWeight: 700,
+          }}
+        >
+          Personajes de Rick & Morty
+        </h1>
+        <Link to="/contacto">
+          <Button style={{ marginLeft: 12 }}>Contacto</Button>
+        </Link>
+      </div>
       <div
         style={{
           margin: '0 auto',
