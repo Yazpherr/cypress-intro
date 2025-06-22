@@ -1,0 +1,42 @@
+// Variables de color y espaciado
+$primary-color: #007bff;
+$font-color: #ffffff;
+$disabled-color: #c0c0c0;
+$border-radius: 0.25rem;
+$transition-duration: 0.2s;
+
+// Mixin para responsividad
+@mixin responsive-button {
+  @media (max-width: 600px) {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+// Estilo base del botón
+.button {
+  background-color: $primary-color;
+  color: $font-color;
+  border: none;
+  border-radius: $border-radius;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color $transition-duration ease-in-out;
+
+  // Adaptar tipografía y padding en pantallas pequeñas
+  @include responsive-button;
+
+  // Estado hover
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+
+  // Estado deshabilitado
+  &:disabled,
+  &[aria-disabled='true'] {
+    background-color: $disabled-color;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}

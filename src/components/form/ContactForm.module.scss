@@ -1,0 +1,55 @@
+$form-padding: 1rem;
+$border-color: #ccc;
+$primary-color: #007bff;
+$success-color: #28a745;
+
+.form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: $form-padding;
+  border: 1px solid $border-color;
+  border-radius: 0.25rem;
+}
+
+.field {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-bottom: 0.25rem;
+  }
+
+  input,
+  textarea {
+    padding: 0.5rem;
+    border: 1px solid $border-color;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    resize: vertical;
+  }
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.success {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: $form-padding;
+  background-color: $success-color;
+  color: white;
+  border-radius: 0.25rem;
+  text-align: center;
+}
