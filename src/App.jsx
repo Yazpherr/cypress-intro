@@ -9,7 +9,6 @@ import { AppRouter } from './router/AppRouter';
 export default function App() {
   return (
     <>
-      {/* Podrías agregar aquí un Header o un Layout wrapper */}
       <AppRouter />
     </>
   );
